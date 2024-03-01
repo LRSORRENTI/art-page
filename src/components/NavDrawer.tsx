@@ -26,7 +26,24 @@ export function NavDrawer() {
   return (
     <Drawer>
       <DrawerTrigger asChild>
-        <Button variant="outline">Open Drawer</Button>
+        <Button variant={"ghost"} className="border-none hover:bg-inherit hover:cursor-pointer hover:bg-slate-100">
+        <p>
+  <svg
+    width="45"
+    height="65"
+    viewBox="0 0 50 50"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M6 13.5C6 13.1193 6.11929 12 7.5 12H37.5C38.8807 12 39 13.1193 39 13.5C39 13.8807 38.8807 15 37.5 15H7.5C6.11929 15 6 13.8807 6 13.5ZM21 22.5C21 22.1193 21.1193 21 22.5 21H37.5C38.8807 21 39 22.1193 39 22.5C39 22.8807 38.8807 24 37.5 24H22.5C21.1193 24 21 22.8807 21 22.5ZM12 31.5C12 31.1193 12.1193 30 13.5 30H37.5C38.8807 30 39 31.1193 39 31.5C39 31.8807 38.8807 33 37.5 33H13.5C12.1193 33 12 31.8807 12 31.5Z"
+      fill="lightgrey"
+    ></path>
+  </svg>
+</p>
+
+
+        </Button>
       </DrawerTrigger>
       <DrawerContent>
         <div className="mx-auto w-full max-w-sm">
