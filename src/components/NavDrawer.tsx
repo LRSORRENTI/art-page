@@ -14,7 +14,7 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer"
  
-
+import Toggler from "./Toggler"
  
 export function NavDrawer() {
   const [goal, setGoal] = React.useState(350)
@@ -69,9 +69,9 @@ export function NavDrawer() {
             </div>
           </div>
           <DrawerFooter>
-            <p className="mx-auto text-3xl mb-3 font-thin hover:font-extralight hover:cursor-pointer">about</p>
-            <p className="mx-auto text-3xl mb-3 font-thin hover:font-extralight hover:cursor-pointer ">gallery</p>
-            <p className="mx-auto text-3xl font-thin hover:font-extralight hover:cursor-pointer ">contact</p>
+            <p className="mx-auto text-3xl mb-3 font-thin hover:font-extralight hover:cursor-pointer" style={{transition: ".2s ease-in"}}>about</p>
+            <p className="mx-auto text-3xl mb-3 font-thin hover:font-extralight hover:cursor-pointer" style={{transition: ".2s ease-in"}}>gallery</p>
+            <p className="mx-auto text-3xl font-thin hover:font-extralight hover:cursor-pointer " style={{transition: ".2s ease-in"}}>contact</p>
           </DrawerFooter>
         </div>
       </DrawerContent>
