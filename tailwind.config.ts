@@ -18,6 +18,12 @@ const config = {
       },
     },
     extend: {
+      transitionDuration: {
+        'custom': '.2s',
+      },
+      transitionTimingFunction: {
+        'custom-ease-in': 'ease-in',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
