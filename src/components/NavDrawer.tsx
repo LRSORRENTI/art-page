@@ -13,9 +13,7 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer"
- 
-import Toggler from "./Toggler"
- 
+  
 export function NavDrawer() {
   const [goal, setGoal] = React.useState(350)
  
@@ -26,7 +24,7 @@ export function NavDrawer() {
   return (
     <Drawer>
       <DrawerTrigger asChild>
-        <Button variant={"ghost"} className="border border-slate-200 hover:bg-inherit hover:cursor-pointer hover:bg-slate-100 w-12 ml-2 mt-2">
+        <Button variant={"ghost"} className="border border-slate-200 hover:bg-inherit hover:cursor-pointer hover:bg-slate-100 w-12 ml-2 mt-2 lg:hidden">
         <p>
   <svg
     width="45"

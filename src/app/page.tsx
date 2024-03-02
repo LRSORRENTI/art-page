@@ -1,17 +1,17 @@
 'use client'
-import { useState } from 'react';
 import { NavDrawer } from '@/components/NavDrawer';
-import Toggler from '@/components/Toggler';
+import { HeroContainer } from '@/components/HeroContainer'
 export default function Home() {
-  const [isActive, setIsActive] = useState(false);
+  // const [isActive, setIsActive] = useState(false);
 
-  const toggleBurger = () => {
-    setIsActive(!isActive);
-  };
+  // const toggleBurger = () => {
+  //   setIsActive(!isActive);
+  // };
 
   return (
     <>
     <NavDrawer/>
+    <HeroContainer/>
     </>
   );
 }
