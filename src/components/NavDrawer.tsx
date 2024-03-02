@@ -26,7 +26,7 @@ export function NavDrawer() {
   return (
     <Drawer>
       <DrawerTrigger asChild>
-        <Button variant={"ghost"} className="border-none hover:bg-inherit hover:cursor-pointer hover:bg-slate-100">
+        <Button variant={"ghost"} className="border border-slate-200 hover:bg-inherit hover:cursor-pointer hover:bg-slate-100 w-12 ml-2 mt-2">
         <p>
   <svg
     width="45"
