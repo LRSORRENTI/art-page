@@ -12,7 +12,10 @@ export default function Home() {
     <div className=''>
     <HeroContainer/>
     </div>
+    <div className=' left-1/3 bottom-60 fixed'>
+    <p className='flex ml-1 font-extralight'>current exhibition: liminal</p>
     <CurrentExhibition/>
+    </div>
     </>
   );
 }
