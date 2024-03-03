@@ -13,7 +13,7 @@ import {
 export function CurrentExhibition() {
     return (
         <Carousel
-            className="w-full max-w-xs"
+            className="w-96"
             plugins={[
                 Autoplay({
                     delay: 3500,
@@ -25,14 +25,14 @@ export function CurrentExhibition() {
                     <CarouselItem key={index}>
                         <div className="p-1">
                             <Card>
-                                <div className="w-full">
-                                    <AspectRatio ratio={16 / 9}>
-                                        <Image
-                                            width={400}
-                                            height={169} // Adjusted height for a 16:9 aspect ratio
+                                <div className="w-full rounded">
+                                    <AspectRatio ratio={32 / 18}>
+                                        <img
+                                            width={100}
+                                            height={16} // Adjusted height for a 16:9 aspect ratio
                                             src={`/Liminal/liminal${index + 1}.jpg`}
                                             alt={`Liminal Image ${index + 1}`}
-                                            className="rounded-md object-cover"
+                                            className="rounded "
                                         />
                                     </AspectRatio>
                                 </div>
