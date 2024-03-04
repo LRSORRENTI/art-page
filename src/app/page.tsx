@@ -2,7 +2,7 @@
 import { NavDrawer } from '@/components/NavDrawer';
 import { HeroContainer } from '@/components/HeroContainer'
 import { CurrentExhibition } from '@/components/CurrentExhibition';
-
+import { Masonry } from '@/components/Masonry';
 export default function Home() {
   return (
     <>
@@ -13,7 +13,7 @@ export default function Home() {
       <div className=''>
         <HeroContainer/>
       </div>
-      
+      <Masonry/>
       {
       // This is the carousel component, going to experiment with a grid layout 
       // instead
