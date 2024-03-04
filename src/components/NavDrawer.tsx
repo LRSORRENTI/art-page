@@ -14,7 +14,7 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer"
   
-export function NavDrawer() {
+export function NavDrawer({ setCurrentSelection}: any) {
   const [goal, setGoal] = React.useState(350)
  
   function onClick(adjustment: number) {
@@ -66,11 +66,12 @@ export function NavDrawer() {
             <div className="mt-3 h-[120px]">
             </div>
           </div>
-          <DrawerFooter>
-            <p className="mx-auto text-3xl mb-3 font-thin hover:font-extralight hover:cursor-pointer" style={{transition: ".2s ease-in"}}>about</p>
-            <p className="mx-auto text-3xl mb-3 font-thin hover:font-extralight hover:cursor-pointer" style={{transition: ".2s ease-in"}}>gallery</p>
-            <p className="mx-auto text-3xl font-thin hover:font-extralight hover:cursor-pointer " style={{transition: ".2s ease-in"}}>contact</p>
-          </DrawerFooter>
+        <DrawerFooter>
+        <p className="mx-auto text-3xl mb-3 font-thin hover:font-extralight hover:cursor-pointer" style={{transition: ".2s ease-in"}} onClick={() => setCurrentSelection('about')}>about</p>
+        <p className="mx-auto text-3xl mb-3 font-thin hover:font-extralight hover:cursor-pointer" style={{transition: ".2s ease-in"}} onClick={() => setCurrentSelection('current')}>current</p>
+        <p className="mx-auto text-3xl mb-3 font-thin hover:font-extralight hover:cursor-pointer" style={{transition: ".2s ease-in"}} onClick={() => setCurrentSelection('coming')}>coming soon</p>
+        <p className="mx-auto text-3xl font-thin hover:font-extralight hover:cursor-pointer" style={{transition: ".2s ease-in"}} onClick={() => setCurrentSelection('contact')}>contact</p>
+      </DrawerFooter>
         </div>
       </DrawerContent>
     </Drawer>

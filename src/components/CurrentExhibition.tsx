@@ -8,44 +8,44 @@ export function CurrentExhibition(){
         </h2>
         <div className="photo-gallery flex-col lg:flex-row flex gap-[20px] ">
             <div className="column flex flex-col gap-[20px] ">
-                <div className="photo">
+                <div className="photo rounded-md">
                     <img src="/Night/night1.jpg" alt="" className="w-[100%] h-[100%] rounded-md object-cover" />
                 </div>
-                <div className="photo">
+                <div className="photo rounded-md">
                     <img src="/Night/night2.jpg" alt=""  className="w-[100%] h-[100%] rounded-md object-cover" />
                 </div>
-                <div className="photo">
+                <div className="photo rounded-md">
                     <img src="/Night/night3.jpg" alt=""  className="w-[100%] h-[100%] rounded-md object-cover"/>
                 </div>
                 </div>
             <div className="column flex flex-col gap-[20px]">
-                <div className="photo">
+                <div className="photo rounded-md">
                     <img src="/Night/night4.jpg" alt=""  className="w-[100%] h-[100%] rounded-md object-cover" />
                 </div>
-                <div className="photo">
+                <div className="photo rounded-md">
                     <img src="/Night/night5.jpg" alt=""  className="w-[100%] h-[100%] rounded-md object-cover" />
                 </div>
-                <div className="photo">
+                <div className="photo rounded-md">
                     <img src="/Night/night6.jpg" alt=""  className="w-[100%] h-[100%] rounded-md object-cover" />
                 </div>
                 </div>
             <div className="column flex flex-col gap-[20px]">
-                <div className="photo">
+                <div className="photo rounded-md">
                     <img src="/Night/night7.jpg" alt=""  className="w-[100%] h-[100%] rounded-md object-cover" />
                 </div>
-                <div className="photo">
+                <div className="photo rounded-md">
                     <img src="/Night/night8.jpg" alt=""  className="w-[100%] h-[100%] rounded-md object-cover" />
                 </div>
-                <div className="photo">
+                <div className="photo rounded-md">
                     <img src="/Night/night9.jpg" alt=""  className="w-[100%] h-[100%] rounded-md object-cover" />
                 </div>
-                <div className="photo">
+                <div className="photo rounded-md">
                     <img src="/Night/night10.jpg" alt=""  className="w-[100%] h-[100%] rounded-md object-cover" />
                 </div>
-                <div className="photo">
+                <div className="photo rounded-md">
                     <img src="/Night/night11.jpg" alt=""  className="w-[100%] h-[100%] rounded-md object-cover" />
                 </div>
-                <div className="photo">
+                <div className="photo rounded-md">
                     <img src="/Night/night12.jpg" alt=""  className="w-[100%] h-[100%] rounded-md object-cover" />
                 </div>
                 </div>

@@ -1,4 +1,4 @@
-
+import Image from "next/image"
 
 export function ComingSoon(){
     return ( 
@@ -8,35 +8,35 @@ export function ComingSoon(){
         </h2>
         <div className="photo-gallery flex-col lg:flex-row flex gap-[20px] ">
             <div className="column flex flex-col gap-[20px] ">
-                <div className="photo">
+                <div className="photo rounded-md">
                     <img src="/Liminal/liminal1.jpg" alt="" className="w-[100%] h-[100%] rounded-md object-cover" />
                 </div>
-                <div className="photo">
+                <div className="photo rounded-md">
                     <img src="/Liminal/liminal2.jpg" alt=""  className="w-[100%] h-[100%] rounded-md object-cover" />
                 </div>
-                <div className="photo">
+                <div className="photo rounded-md">
                     <img src="/Liminal/liminal3.jpg" alt=""  className="w-[100%] h-[100%] rounded-md object-cover"/>
                 </div>
                 </div>
             <div className="column flex flex-col gap-[20px]">
-                <div className="photo">
+                <div className="photo rounded-md">
                     <img src="/Liminal/liminal4.jpg" alt=""  className="w-[100%] h-[100%] rounded-md object-cover" />
                 </div>
-                <div className="photo">
+                <div className="photo rounded-md">
                     <img src="/Liminal/liminal5.jpg" alt=""  className="w-[100%] h-[100%] rounded-md object-cover" />
                 </div>
-                <div className="photo">
+                <div className="photo rounded-md">
                     <img src="/Liminal/liminal6.jpg" alt=""  className="w-[100%] h-[100%] rounded-md object-cover" />
                 </div>
                 </div>
             <div className="column flex flex-col gap-[20px]">
-                <div className="photo">
+                <div className="photo rounded-md">
                     <img src="/Liminal/liminal7.jpg" alt=""  className="w-[100%] h-[100%] rounded-md object-cover" />
                 </div>
-                <div className="photo">
+                <div className="photo rounded-md">
                     <img src="/Liminal/liminal8.jpg" alt=""  className="w-[100%] h-[100%] rounded-md object-cover" />
                 </div>
-                <div className="photo">
+                <div className="photo rounded-md">
                     <img src="/Liminal/liminal9.jpg" alt=""  className="w-[100%] h-[100%] rounded-md object-cover" />
                 </div>
                 </div>

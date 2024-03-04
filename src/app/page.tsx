@@ -10,7 +10,7 @@ export default function Home() {
     <>
         <h1 className='flex justify-center mx-auto text-slate-500 mt-4 font-thin text-3xl md:text-5xl'>lumina gallery</h1>
         <div>
-            <NavDrawer />
+        <NavDrawer setCurrentSelection={setCurrentSelection} />
         </div>
         <div>
             <HeroContainer setCurrentSelection={setCurrentSelection} />
