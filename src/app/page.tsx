@@ -4,6 +4,7 @@ import { NavDrawer } from '@/components/NavDrawer';
 import { HeroContainer } from '@/components/HeroContainer'
 import { CurrentExhibition } from '@/components/CurrentExhibition';
 import { ComingSoon } from '@/components/ComingSoon';
+import { About } from '@/components/About';
 export default function Home() {
   const [currentSelection, setCurrentSelection] = useState('current');
   return (
@@ -15,7 +16,10 @@ export default function Home() {
         <div>
             <HeroContainer setCurrentSelection={setCurrentSelection} />
         </div>
-        {currentSelection === 'current' ? <CurrentExhibition /> : <ComingSoon />}
+        {/* {currentSelection === 'current' ? <CurrentExhibition /> : <ComingSoon />} */}
+      {currentSelection === 'current' && <CurrentExhibition />}
+      {currentSelection === 'coming' && <ComingSoon />}
+      {currentSelection === 'about' && <About />}
     </>
 );
 }
