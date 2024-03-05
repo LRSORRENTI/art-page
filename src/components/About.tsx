@@ -13,12 +13,10 @@ export function About() {
     </div>
     </div>
     </div>
-    <div className=''>
-    <div>
-        <p className=''>Welcome to Lumina Gallery, a sanctuary of photographic art where the beauty of the world is captured and displayed. Nestled in a modern, minimalist space bathed in natural light, our gallery is a testament to the power of simplicity and elegance. With a palette of white and off-white, the interior serves as the perfect canvas for the vibrant and thought-provoking photographs that adorn our walls.</p>
-        <p className=''>At Lumina Gallery, we celebrate the art of photography in all its forms. From breathtaking landscapes to intimate portraits, our carefully curated collection showcases the work of both renowned photographers and emerging talents. Each photograph tells a story, inviting viewers to embark on a visual journey that transcends time and space.</p>
-        <p className=''>Our mission is to inspire and connect with our visitors, offering a tranquil environment where the art of photography can be appreciated and explored. Lumina Gallery is not just a space for viewing photographs; it's a place where memories are made, and the beauty of life is illuminated.</p>
-    </div>
+    <div className='block font-extralight text-center mx-auto mt-[570px] sm:mt-[300px] ' style={{width:"300px"}}>
+        <p className='mb-4'>Welcome to Lumina Gallery, a sanctuary of photographic art where the beauty of the world is captured and displayed. Nestled in a modern, minimalist space bathed in natural light, our gallery is a testament to the power of simplicity and elegance. With a palette of white and off-white, the interior serves as the perfect canvas for the vibrant and thought-provoking photographs that adorn our walls.</p>
+        <p className='mb-4'>At Lumina Gallery, we celebrate the art of photography in all its forms. From breathtaking landscapes to intimate portraits, our carefully curated collection showcases the work of both renowned photographers and emerging talents. Each photograph tells a story, inviting viewers to embark on a visual journey that transcends time and space.</p>
+        <p className='mb-2'>Our mission is to inspire and connect with our visitors, offering a tranquil environment where the art of photography can be appreciated and explored. Lumina Gallery is not just a space for viewing photographs; it's a place where memories are made, and the beauty of life is illuminated.</p>
     </div>
     </>
   )
