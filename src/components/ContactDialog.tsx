@@ -9,22 +9,22 @@ import {
     AlertDialogTitle,
     AlertDialogTrigger,
   } from "@/components/ui/alert-dialog"
-  import { Button } from "@/components/ui/button"
+  import { InputField } from "./InputField";
 
   export function ContactDialog({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
     return (
         <AlertDialog open={isOpen} onOpenChange={onClose}>
         <AlertDialogContent>
           <AlertDialogHeader>
-            <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
-            <AlertDialogDescription>
-              This action cannot be undone. This will permanently delete your
-              account and remove your data from our servers.
+            <AlertDialogTitle className="font-extralight">contact lumina gallery</AlertDialogTitle>
+            <AlertDialogDescription className="font-extralight">
+            enter your name, email, and a message and we'll get back to you
             </AlertDialogDescription>
+            <InputField/>
           </AlertDialogHeader>
           <AlertDialogFooter>
-            <AlertDialogCancel onClick={onClose}>Cancel</AlertDialogCancel>
-            <AlertDialogAction>Continue</AlertDialogAction>
+            <AlertDialogCancel className="font-extralight" onClick={onClose}>cancel</AlertDialogCancel>
+            <AlertDialogAction className="font-extralight bg-slate-400">submit</AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
