@@ -1,6 +1,6 @@
 import * as React from "react"
 // import { MinusIcon, PlusIcon } from "@radix-ui/react-icons"
-
+import { useState } from "react"
  
 import { Button } from "@/components/ui/button"
 import {
@@ -13,10 +13,15 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer"
-  
+import { ContactDialog } from "./ContactDialog"
+
+
+
+
 export function NavDrawer({ setCurrentSelection}: any) {
   const [goal, setGoal] = React.useState(350)
- 
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+
   function onClick(adjustment: number) {
     setGoal(Math.max(200, Math.min(400, goal + adjustment)))
   }
@@ -70,10 +75,12 @@ export function NavDrawer({ setCurrentSelection}: any) {
         <p className="mx-auto text-3xl mb-3 font-thin hover:font-extralight hover:cursor-pointer" style={{transition: ".2s ease-in"}} onClick={() => setCurrentSelection('about')}>about</p>
         <p className="mx-auto text-3xl mb-3 font-thin hover:font-extralight hover:cursor-pointer" style={{transition: ".2s ease-in"}} onClick={() => setCurrentSelection('current')}>current</p>
         <p className="mx-auto text-3xl mb-3 font-thin hover:font-extralight hover:cursor-pointer" style={{transition: ".2s ease-in"}} onClick={() => setCurrentSelection('coming')}>coming soon</p>
-        <p className="mx-auto text-3xl font-thin hover:font-extralight hover:cursor-pointer" style={{transition: ".2s ease-in"}} onClick={() => setCurrentSelection('contact')}>contact</p>
+        <p className="mx-auto text-3xl font-thin hover:font-extralight hover:cursor-pointer" style={{transition: ".2s ease-in"}} onClick={() => setIsDialogOpen(true)}>contact</p>
       </DrawerFooter>
         </div>
       </DrawerContent>
+      {isDialogOpen && <ContactDialog isOpen={isDialogOpen} onClose={() => setIsDialogOpen(false)} />}
     </Drawer>
+    
   )
 }
